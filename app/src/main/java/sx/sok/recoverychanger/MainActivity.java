@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
     public void buttonOnClickStock(View v)
     {
         ProgressDialog progress = new ProgressDialog(this);
-        if (Build.VERSION.RELEASE == "4.4.2" || Build.VERSION.RELEASE == "5.1.1"){
+        if (myVersion.equals("4.4.4") || myVersion.equals("4.4.2") || myVersion.equals("5.1.1")){
             progress.setMessage("Installing " + getRecoveryName(RECTYPE_STC_KK));
             new copyRawToSD(progress, this).execute(RECTYPE_STC_KK);
         }
@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
     public void buttonOnClickTWRP(View v)
     {
         ProgressDialog progress = new ProgressDialog(this);
-        if (Build.VERSION.RELEASE == "4.4.2" || Build.VERSION.RELEASE == "5.1.1"){
+        if (myVersion.equals("4.4.4") || myVersion.equals("4.4.2") || myVersion.equals("5.1.1")){
             progress.setMessage("Installing " + getRecoveryName(RECTYPE_TWRP_KK));
             new copyRawToSD(progress, this).execute(RECTYPE_TWRP_KK);
         }
@@ -149,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
     public void buttonOnClickPhillz(View v)
     {
         ProgressDialog progress = new ProgressDialog(this);
-        if (Build.VERSION.RELEASE == "4.4.2" || Build.VERSION.RELEASE == "5.1.1"){
+        if (myVersion.equals("4.4.4") || myVersion.equals("4.4.2") || myVersion.equals("5.1.1")){
             progress.setMessage("Installing " + getRecoveryName(RECTYPE_PHL_KK));
             new copyRawToSD(progress, this).execute(RECTYPE_PHL_KK);
         }
